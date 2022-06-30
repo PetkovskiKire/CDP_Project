@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ProjectConfiguration>
+<!-- Written by CDPStudio 2.2.2, 2022-03-24T18:25:11. -->
+<qtcreator>
+ <data>
+  <variable>ProjectManagerSettings</variable>
+  <valuemap type="QVariantMap">
+   <valuemap type="QVariantMap" key="ApplicationSettings">
+    <value type="QString" key="DeployDirectory">E:/CDPStudioWorkspace/deployments/systems/CDP_4.10_Windows_x86_64-bit/SZVS/GUIApp</value>
+    <value type="QString" key="DeviceId">Desktop Device</value>
+    <value type="QString" key="TargetFriendlyName">Windows x86 64-bit</value>
+   </valuemap>
+  </valuemap>
+ </data>
+</qtcreator>

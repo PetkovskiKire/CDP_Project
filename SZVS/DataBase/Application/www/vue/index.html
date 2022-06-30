@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data:; script-src 'self' 'unsafe-inline' 'unsafe-eval'; font-src 'self' data: https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; connect-src 'self' ws: wss:; base-uri 'none'; form-action 'self'">
+  <link rel="stylesheet" type="text/css" href="./semantic.min.css">
+  <style>
+    body{
+        background-color: #008b8b;
+
+    }
+    #Box{
+
+        margin-left: auto;
+        margin-right: auto;
+        width: 810px;
+        height: 600px;
+        overflow: scroll;
+    }
+    table, td, th {
+        border: 1px solid goldenrod;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 15px;
+        text-align: left;
+    }
+
+    tr:hover {
+        background-color: coral;
+    }
+
+    tr:nth-child(even){
+        background-color: #fcefcf;
+    }
+
+    tr:nth-child(odd){
+        background-color: #f8d887;
+    }
+
+    th {
+        background-color: goldenrod;
+        color: white;
+    }
+
+  </style>
+
+  <script src="./jquery.min.js"></script>
+  <script src="./semantic.min.js"></script>
+  <script src="./long.min.js"></script>
+  <script src="./vue.min.js"></script>
+  <script src="./bytebuffer.min.js"></script>
+  <script src="./protobuf.min.js"></script>
+  <script src="./studioapi.js"></script>
+  <script src="./vue.expand.js"></script>
+  <script src="./vue.component-card.js"></script>
+  <script src="./vue.app-card.js"></script>
+  <script src="./model.js" defer></script>
+</head>
+
+<body>
+
+<h3 style="text-align: center; margin-top:100px;">База на податоци</h3>
+<br>
+<div id="Box">
+    <table id="contener">
+        <tr id="naslov">
+            <th>Name</th>
+            <th>Selected</th>
+            <th>TIMESTAMP</th>
+        </tr>
+    </table>
+</div>
+
+<script>
+var client = new studio.api.Client(window.location.host);
+client.find("DataBase.DataBase").then(
+  function(DataBase) {
+      DataBase.subscribeToChildValues("OutPut",
+      function (value) {
+        const myArray = value.split(",");
+        var tbl = $('#contener');
+        for (let i = 0; i < myArray.length; i=i+3) {
+            var row = $('<tr></tr>').appendTo(tbl);
+            $('<td></td>').text(myArray[i]).appendTo(row);
+            $('<td></td>').text(myArray[i+1]).appendTo(row);
+            $('<td></td>').text(myArray[i+2]).appendTo(row);
+        }
+      }
+    );
+  }
+);
+</script>
+</body>
+</body>
+
+</html>
+

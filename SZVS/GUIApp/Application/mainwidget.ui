@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainWindow</class>
+ <widget class="CDPBaseMainWindow" name="mainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>342</width>
+    <height>376</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Main Window</string>
+  </property>
+  <property name="msgBoxBgSvg">
+   <string>:/themes/flat_gray_light/backgrounds/bgMsgBox.svg</string>
+  </property>
+  <property name="msgBoxBtnSvg">
+   <string>:/themes/flat_gray_light/buttons/buttonPlain.svg</string>
+  </property>
+  <property name="themeNight">
+   <string>flat_gray</string>
+  </property>
+  <property name="themeDay">
+   <string>flat_gray_light</string>
+  </property>
+  <property name="numPadName" stdset="0">
+   <string>CDPBaseNumPad</string>
+  </property>
+  <property name="keyPadName" stdset="0">
+   <string>CDPBaseKeyPad</string>
+  </property>
+  <property name="loginRole">
+   <string>Operator</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="CDPBaseLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>60</y>
+      <width>321</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="cdpRouting" stdset="0">
+     <string>GUIApp.Copy.Output1.Value</string>
+    </property>
+   </widget>
+   <widget class="CDPBaseButton" name="btnPauza">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>240</y>
+      <width>145</width>
+      <height>48</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Pause</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="svgFile">
+     <string>:/themes/flat_gray_light/buttons/buttonPlain.svg</string>
+    </property>
+    <property name="svgParsing" stdset="0">
+     <enum>CDPBaseButton::ParseNormal</enum>
+    </property>
+    <property name="checkableByClick">
+     <bool>false</bool>
+    </property>
+    <property name="toggleOnPressed">
+     <bool>true</bool>
+    </property>
+    <property name="cdpCheckedRouting" stdset="0">
+     <string/>
+    </property>
+    <property name="cdpPressedRouting" stdset="0">
+     <string>GUIApp.Buttons.Pauza.Value</string>
+    </property>
+    <property name="pushRoutables" stdset="0">
+     <stringlist>
+      <string>cdpPressedRouting</string>
+     </stringlist>
+    </property>
+   </widget>
+   <widget class="CDPBaseButton" name="btnIzlez">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>180</y>
+      <width>145</width>
+      <height>48</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Exit</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="svgFile">
+     <string>:/themes/flat_gray_light/buttons/buttonPlain.svg</string>
+    </property>
+    <property name="checkableByClick">
+     <bool>false</bool>
+    </property>
+    <property name="cdpCheckedRouting" stdset="0">
+     <string/>
+    </property>
+    <property name="cdpPressedRouting" stdset="0">
+     <string>GUIApp.Buttons.Izlez.Value</string>
+    </property>
+    <property name="pushRoutables" stdset="0">
+     <stringlist>
+      <string>cdpPressedRouting</string>
+     </stringlist>
+    </property>
+   </widget>
+   <widget class="CDPBaseButton" name="btnSluzben">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>300</y>
+      <width>145</width>
+      <height>48</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Working exit</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="svgFile">
+     <string>:/themes/flat_gray_light/buttons/buttonPlain.svg</string>
+    </property>
+    <property name="checkableByClick">
+     <bool>false</bool>
+    </property>
+    <property name="toggleOnPressed">
+     <bool>true</bool>
+    </property>
+    <property name="cdpCheckedRouting" stdset="0">
+     <string/>
+    </property>
+    <property name="cdpPressedRouting" stdset="0">
+     <string>GUIApp.Buttons.SluzbenIzlez.Value</string>
+    </property>
+    <property name="pushRoutables" stdset="0">
+     <stringlist>
+      <string>cdpPressedRouting</string>
+     </stringlist>
+    </property>
+   </widget>
+   <widget class="CDPBaseButton" name="btnPrivaten">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>300</y>
+      <width>145</width>
+      <height>48</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Private exit</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="svgFile">
+     <string>:/themes/flat_gray_light/buttons/buttonPlain.svg</string>
+    </property>
+    <property name="checkableByClick">
+     <bool>false</bool>
+    </property>
+    <property name="toggleOnPressed">
+     <bool>true</bool>
+    </property>
+    <property name="cdpCheckedRouting" stdset="0">
+     <string/>
+    </property>
+    <property name="cdpPressedRouting" stdset="0">
+     <string>GUIApp.Buttons.PrivatenIzlez.Value</string>
+    </property>
+    <property name="pushRoutables" stdset="0">
+     <stringlist>
+      <string>cdpPressedRouting</string>
+     </stringlist>
+    </property>
+   </widget>
+   <widget class="CDPBaseLabel" name="lbSelektirano">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>110</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="cdpRouting" stdset="0">
+     <string>GUIApp.Copy1.Output1.Value</string>
+    </property>
+   </widget>
+   <widget class="CDPBaseLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Your name</string>
+    </property>
+   </widget>
+   <widget class="CDPBaseLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>110</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Selected</string>
+    </property>
+   </widget>
+   <widget class="CDPBaseClockDigi" name="digitalClock">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="maximumDateTime">
+     <datetime>
+      <hour>23</hour>
+      <minute>59</minute>
+      <second>59</second>
+      <year>2022</year>
+      <month>6</month>
+      <day>30</day>
+     </datetime>
+    </property>
+    <property name="minimumDateTime">
+     <datetime>
+      <hour>0</hour>
+      <minute>0</minute>
+      <second>0</second>
+      <year>2022</year>
+      <month>6</month>
+      <day>30</day>
+     </datetime>
+    </property>
+   </widget>
+   <widget class="CDPBaseButton" name="btnVlez">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>180</y>
+      <width>145</width>
+      <height>48</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Enter</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="svgFile">
+     <string>:/themes/flat_gray_light/buttons/buttonPlain.svg</string>
+    </property>
+    <property name="checkableByClick">
+     <bool>false</bool>
+    </property>
+    <property name="cdpCheckedRouting" stdset="0">
+     <string/>
+    </property>
+    <property name="cdpPressedRouting" stdset="0">
+     <string>GUIApp.Buttons.Vlez.Value</string>
+    </property>
+    <property name="pushRoutables" stdset="0">
+     <stringlist>
+      <string>cdpPressedRouting</string>
+     </stringlist>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CDPBaseButton</class>
+   <extends>QPushButton</extends>
+   <header>CDPBaseWidgets/CDPBaseButton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CDPBaseLabel</class>
+   <extends>QLabel</extends>
+   <header>CDPBaseWidgets/CDPBaseLabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CDPBaseClockDigi</class>
+   <extends>QDateTimeEdit</extends>
+   <header>CDPBaseWidgets/CDPBaseClockDigi.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CDPBaseMainWindow</class>
+   <extends>QMainWindow</extends>
+   <header>CDPBaseWidgets/CDPBaseMainWindow.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
