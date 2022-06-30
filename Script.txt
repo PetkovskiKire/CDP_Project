@@ -1,0 +1,39 @@
+
+Copy this two script in Raspberry Pi - directory: /home/pi/SZVS/ConsoleApp
+
+################## Read.py ##################
+
+#!/usr/bin/env python
+
+import RPi.GPIO as GPIO
+from mfrc522 import SimpleMFRC522
+from time import sleep
+
+reader = SimpleMFRC522()
+GPIO.setwarnings(False)
+
+try:
+        id, text = reader.read()
+        print(text)
+
+finally:
+        GPIO.cleanup()
+
+################## Write.py ##################
+
+#!/usr/bin/env python
+
+import RPi.GPIO as GPIO
+from mfrc522 import SimpleMFRC522
+
+reader = SimpleMFRC522()
+
+try:
+        text = input('New data:')
+        print("Now place your tag to write")
+        reader.write(text)
+        print("Written")
+finally:
+        GPIO.cleanup()
+
+
