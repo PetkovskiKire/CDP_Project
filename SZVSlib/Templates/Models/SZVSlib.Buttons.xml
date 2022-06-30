@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Model Name="SZVSlib.Buttons">
+ <ModelTypeClass>C++</ModelTypeClass>
+ <BaseModel>CDPComponent</BaseModel>
+ <Element Name="Priority" Value="normal"/>
+ <Element Name="fs" Value="5"/>
+ <Attributes>
+  <Attribute Name="Description" Value="Simple component" Type="string"/>
+  <Attribute Name="Model" Value="SZVSlib.Buttons" Description="Implementation model used." ReadOnly="1" Required="1" SaveOnChange="0" Type="string"/>
+ </Attributes>
+ <Signals>
+  <Signal Name="Pauza" Value="False" Model="CDPSignal&lt;bool&gt;" Input="1" Type="bool"/>
+  <Signal Name="SluzbenIzlez" Value="False" Model="CDPSignal&lt;bool&gt;" Input="1" Type="bool"/>
+  <Signal Name="PrivatenIzlez" Value="False" Model="CDPSignal&lt;bool&gt;" Input="1" Type="bool"/>
+  <Signal Name="Selektirano" Value="(none)" Model="CDPSignal&lt;string&gt;" Input="0" Type="string"/>
+  <Signal Name="Izlez" Model="CDPSignal&lt;bool&gt;" Input="1" Type="bool"/>
+  <Signal Name="Vlez" Model="CDPSignal&lt;bool&gt;" Input="1" Type="bool"/>
+  <Signal Name="ImePrezimeInput" Model="CDPSignal&lt;string&gt;" Input="1" Type="string"/>
+  <Signal Name="ImePrezimeOutput" Model="CDPSignal&lt;string&gt;" Input="0" Type="string"/>
+ </Signals>
+</Model>

@@ -1,0 +1,8 @@
+<Library Name="SZVSlib">
+ <Models>
+  <Model Name="SZVSlib.Buttons"/>
+  <Model Name="SZVSlib.Copy"/>
+  <Model Name="SZVSlib.DataBase"/>
+  <Model Name="SZVSlib.Queue"/>
+ </Models>
+</Library>

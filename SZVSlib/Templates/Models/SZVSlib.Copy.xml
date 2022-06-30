@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Model Name="SZVSlib.Copy">
+ <ModelTypeClass>C++</ModelTypeClass>
+ <BaseModel>CDPComponent</BaseModel>
+ <Element Name="Priority" Value="normal"/>
+ <Element Name="fs" Value="5"/>
+ <Attributes>
+  <Attribute Name="Description" Value="Simple component" Type="string"/>
+  <Attribute Description="Implementation model used." Name="Model" Value="SZVSlib.Copy" Required="1" SaveOnChange="0" ReadOnly="1" Type="string"/>
+ </Attributes>
+ <Signals>
+  <Signal Name="Input" Model="CDPSignal&lt;string&gt;" Input="1" Type="string"/>
+  <Signal Name="Output1" Model="CDPSignal&lt;string&gt;" Input="0" Type="string"/>
+  <Signal Name="Output2" Model="CDPSignal&lt;string&gt;" Input="0" Type="string"/>
+ </Signals>
+</Model>

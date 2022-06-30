@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Model Name="SZVSlib.DataBase">
+ <ModelTypeClass>C++</ModelTypeClass>
+ <BaseModel>CDPComponent</BaseModel>
+ <Element Name="Priority" Value="normal"/>
+ <Element Name="fs" Value="5"/>
+ <Attributes>
+  <Attribute Name="Description" Type="string" Value="Simple component"/>
+  <Attribute Name="Model" Type="string" ReadOnly="1" Description="Implementation model used." Value="SZVSlib.DataBase" SaveOnChange="0" Required="1"/>
+ </Attributes>
+ <Signals>
+  <Signal Name="Counter" Type="unsigned char" Model="CDPSignal&lt;unsigned char&gt;"/>
+ </Signals>
+ <Element RouteMethod="RouteEvent" Name="VnesiImePrezime" Type="string" LogEventOnChange="0" SaveOnChange="0"/>
+ <Element RouteMethod="RouteEvent" Name="VnesiSelektirano" Type="string" LogEventOnChange="0" SaveOnChange="0"/>
+ <Element RouteMethod="RouteEvent" Name="OutPut" Type="string" LogEventOnChange="0" SaveOnChange="0"/>
+</Model>

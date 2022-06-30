@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Model Name="SZVSlib.Queue">
+ <ModelTypeClass>C++</ModelTypeClass>
+ <BaseModel>CDPComponent</BaseModel>
+ <Element Name="Priority" Value="normal"></Element>
+ <Element Name="fs" Value="5"></Element>
+ <Attributes>
+  <Attribute Name="Description" Type="string" Value="Simple component"></Attribute>
+  <Attribute Name="Model" Type="string" ReadOnly="1" Description="Implementation model used." Value="SZVSlib.Queue" SaveOnChange="0" Required="1"></Attribute>
+ </Attributes>
+ <Signals>
+  <Signal Name="Counter" Type="unsigned char" Model="CDPSignal&lt;unsigned char&gt;"></Signal>
+  <Signal Name="ImePrezimeSignal" Type="string" Input="0" Model="CDPSignal&lt;string&gt;"></Signal>
+  <Signal Name="SelektiranoSignal" Type="string" Input="0" Model="CDPSignal&lt;string&gt;"></Signal>
+  <Signal Name="ActiveDataBase" Type="bool" Input="1" Model="CDPSignal&lt;bool&gt;"></Signal>
+ </Signals>
+ <Element RouteMethod="RouteEvent" Name="ImePrezimeQueue" Type="string" LogEventOnChange="0" SaveOnChange="0"></Element>
+ <Element RouteMethod="RouteEvent" Name="SelektiranoQueue" Type="string" LogEventOnChange="0" SaveOnChange="0"></Element>
+</Model>

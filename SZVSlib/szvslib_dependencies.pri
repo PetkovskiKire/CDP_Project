@@ -1,0 +1,1 @@
+CONFIG += cdp2sql

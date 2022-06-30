@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ProjectConfiguration>
+<!-- Written by CDPStudio 2.2.2, 2022-04-04T14:40:58. -->
+<qtcreator>
+ <data>
+  <variable>LibrarySettings</variable>
+  <valuemap type="QVariantMap">
+   <valuemap type="QVariantMap" key="Toolkits">
+    <value type="QString" key="Raspberry Pi ARMv6 32-bit (Debian 10)">com.cdptech.cdpstudio.kit410.raspbian_armv6_13</value>
+    <value type="QString" key="Windows x86 64-bit">com.cdptech.cdpstudio.kit410.win64_13</value>
+   </valuemap>
+  </valuemap>
+ </data>
+</qtcreator>
